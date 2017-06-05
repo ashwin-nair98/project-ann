@@ -2,7 +2,7 @@
 <html>
 <head>
   <% include ../partials/header.ejs %>
-  <script src="/js/adduser.js"></script>
+
 </head>
 
 <body>
@@ -40,23 +40,18 @@
 							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
-										<div class="field half first">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="phone">Phone Number</label>
-											<input type="text" name="phone" id="phone" />
-										</div>
+                  <form method="post">
+                    <div class="field">
+                      <label for="name">Name</label>
+                      <input type="text" name="name" placeholder="Enter your name.." required>
+                    </div>
+                    <div class="field">
+                      <label for="phone">Phone</label>
+                      <input type="text" name="phone" placeholder="Enter your phone number..." required>
+                    </div>
+                    <input type="submit" class="button submit" value="Submit">
+                  </form>
 
-                    <button type="submit" class="button submit">Subscribe</button>
-
-									</form>
 								</section>
 								<section>
 									<ul class="contact">

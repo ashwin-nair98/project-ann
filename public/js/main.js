@@ -48,8 +48,12 @@
 
 					// Submit form.
 						$(this).parents('form').submit();
-
 				});
+
+				//$('form').on('submit', function(){
+				//	var user = $(this).serialize();
+				//	console.log(user);
+				//});
 
 		// Prioritize "important" elements on medium.
 			skel.on('+medium -medium', function() {
